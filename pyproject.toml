@@ -3,11 +3,29 @@ name = "friendly-neighborood-air-quality-forecasting-service"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.11"
+
+dependencies = [
+    "pandas>=3.0.0",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.1",
+]
 
 [dependency-groups]
 dev = [
+    "iprogress>=0.4",
+    "ipykernel>=7.1.0",
+    "ipywidgets>=8.1.8",
     "pre-commit>=4.5.1",
     "ruff>=0.14.14",
 ]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv.extra-build-dependencies]
+hsfs = ["imp"]

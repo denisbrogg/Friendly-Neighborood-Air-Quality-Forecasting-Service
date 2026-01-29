@@ -1,0 +1,6 @@
+# https://aqicn.org/city/switzerland/lugano-universita/
+
+city: Lugano
+street: Università della Svizzera italiana
+aqicn_id: "@2689"
+aqicn_data_path: ./data/lugano-universita-air-quality.csv
